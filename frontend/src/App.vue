@@ -9,6 +9,9 @@
         <router-view :key="screen" class="router-view-c"></router-view>
       </vue-page-stack>
     </transition>
+    <footer class="app-footer">
+      Made with love ❤️
+    </footer>
   </div>
 </template>
 
@@ -135,4 +138,18 @@ export default class App extends Vue {
 #bottom {
   bottom: 0;
 }
+
+ /* フッターのスタイル */
+ .app-footer {
+    position: fixed;
+    left: 0;
+    bottom: 50px;
+    width: 100%;
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+  }
+
 </style>
